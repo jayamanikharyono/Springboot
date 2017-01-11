@@ -24,7 +24,10 @@ public class MainController
 	@GetMapping("/")
 	public String home(HttpServletRequest request)
 	{
-		request.setAttribute("mode", "MODE_HOME");;
+		request.setAttribute("mode", "MODE_HOME");
+		System.out.println("NICE AF");
+		System.out.println("NICE AF");
+		System.out.println("NICE AF");
 		return "index";
 	}
 	@GetMapping("/all-tasks")
